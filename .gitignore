@@ -1,0 +1,6 @@
+/mailsender/
+/output/
+/test-results/
+.env
+.DS_Store
+Thumbs.db
