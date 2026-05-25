@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hacienda Hôtel Kinshasa | Hôtel de standing & restaurant à Gombe</title>
-    <meta name="description" content="Maquette de proposition digitale pour Hacienda Hôtel Kinshasa, hôtel de standing et restaurant Côte à Côte au 65 Avenue de la Justice, Gombe.">
-    <meta name="theme-color" content="#fff8f2">
+    <title>Hacienda Hôtel Kinshasa | Accueil</title>
+    <meta name="description" content="Maquette de proposition digitale multipage pour Hacienda Hôtel Kinshasa, hôtel de standing et restaurant Côte à Côte à Gombe.">
+    <meta name="theme-color" content="#fff8f5">
     <meta property="og:title" content="Hacienda Hôtel Kinshasa">
-    <meta property="og:description" content="Concept de site pour présenter les chambres, le restaurant Côte à Côte et les réservations directes à Gombe.">
+    <meta property="og:description" content="Concept de site multipage pour présenter les chambres, Côte à Côte et la réservation directe à Gombe.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="images/hacienda-hero.png">
-    <link rel="preload" as="image" href="images/hacienda-hero.png">
+    <meta property="og:image" content="images/stitch/accueil-1.jpg">
+    <link rel="preload" as="image" href="images/stitch/accueil-1.jpg">
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
     <script src="script.js" defer></script>
@@ -21,7 +21,7 @@
         <span class="brand-mark" aria-hidden="true">H</span>
         <span>
           <strong>Hacienda Hôtel</strong>
-          <small>Gombe, Kinshasa</small>
+          <small>Kinshasa</small>
         </span>
       </a>
 
@@ -34,241 +34,118 @@
       </nav>
 
       <div class="header-actions">
+        <a class="header-call" href="tel:+243820004010">Appeler</a>
+        <a class="header-cta" href="https://wa.me/243820004010?text=Bonjour%20Hacienda%20H%C3%B4tel%2C%20je%20souhaite%20faire%20une%20r%C3%A9servation." target="_blank" rel="noreferrer">WhatsApp</a>
         <button class="icon-button" type="button" data-theme-toggle aria-label="Changer le thème" aria-pressed="false">
           <i data-lucide="sun" aria-hidden="true"></i>
         </button>
         <button class="icon-button menu-button" type="button" data-menu-toggle aria-controls="site-nav" aria-expanded="false" aria-label="Ouvrir le menu">
           <i data-lucide="menu" aria-hidden="true"></i>
         </button>
-        <a class="header-cta" href="reservations.html">
-          <i data-lucide="phone" aria-hidden="true"></i>
-          <span>Réserver</span>
-        </a>
       </div>
     </header>
 
-    <main id="accueil">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-media" aria-hidden="true"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-inner">
+    <main>
+      <section class="stitch-hero">
+        <div class="stitch-hero-media" aria-hidden="true"></div>
+        <div class="stitch-hero-inner">
           <p class="eyebrow">65 Avenue de la Justice, Gombe</p>
-          <h1 id="hero-title">Hôtel de standing & table gastronomique à Kinshasa</h1>
-          <p class="hero-copy">Un refuge d'affaires au coeur de la Gombe, avec chambres confortables, cour intérieure, restaurant Côte à Côte et lounge pour recevoir avec calme.</p>
+          <h1>Hacienda Hôtel Kinshasa</h1>
+          <p>Hôtel de standing & table gastronomique au coeur du quartier d'affaires de la Gombe.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="https://wa.me/243820004010?text=Bonjour%20Hacienda%20H%C3%B4tel%2C%20je%20souhaite%20faire%20une%20r%C3%A9servation." target="_blank" rel="noreferrer">
               <i data-lucide="message-circle" aria-hidden="true"></i>
               Réserver par WhatsApp
             </a>
-            <a class="button button-secondary" href="restaurant.html">
-              <i data-lucide="utensils" aria-hidden="true"></i>
-              Découvrir le restaurant
-            </a>
-          </div>
-        </div>
-        <div class="hero-facts" aria-label="Informations rapides">
-          <div>
-            <strong>24h/24</strong>
-            <span>Accueil hôtel</span>
-          </div>
-          <div>
-            <strong>~150 USD</strong>
-            <span>Nuitée indicative</span>
-          </div>
-          <div>
-            <strong>Côte à Côte</strong>
-            <span>Restaurant maison</span>
+            <a class="button button-secondary" href="chambres.html">Voir les chambres</a>
           </div>
         </div>
       </section>
 
-      <section class="section intro-band" aria-labelledby="intro-title">
-        <div class="section-grid">
+      <section class="proof-strip" aria-label="Informations rapides">
+        <div><i data-lucide="map-pin" aria-hidden="true"></i><span>65 Avenue de la Justice</span></div>
+        <div><i data-lucide="banknote" aria-hidden="true"></i><span>Nuitée ~150 USD</span></div>
+        <div><i data-lucide="utensils" aria-hidden="true"></i><span>Côte à Côte</span></div>
+        <div><i data-lucide="clock" aria-hidden="true"></i><span>Hôtel 24h/24</span></div>
+      </section>
+
+      <section class="section stitch-positioning">
+        <div class="content-split">
           <div>
-            <p class="eyebrow">Positionnement</p>
-            <h2 id="intro-title">Un refuge d'affaires au coeur de la Gombe</h2>
+            <p class="eyebrow">Exclusivité & calme</p>
+            <h2>Un refuge d'affaires au coeur de la Gombe</h2>
+            <div class="intro-copy">
+              <p>Hacienda Hôtel Kinshasa propose une expérience où l'inspiration hacienda rencontre les attentes du voyageur moderne : calme, adresse centrale, table sur place et réservation directe.</p>
+              <p>Situé sur l'Avenue de la Justice, l'établissement peut devenir une vitrine digitale claire pour les séjours professionnels, les repas d'affaires et les réservations privées.</p>
+            </div>
           </div>
-          <div class="intro-copy">
-            <p>Hacienda Hôtel réunit ce que recherchent les voyageurs d'affaires à Kinshasa : une adresse centrale, un cadre sécurisé, une table sur place et un contact direct pour réserver sans friction.</p>
-            <p>Cette maquette montre comment un site officiel pourrait transformer ces forces déjà connues en parcours clair : voir les chambres, comprendre l'ambiance, réserver, puis trouver l'adresse en quelques secondes.</p>
+          <div class="framed-image">
+            <img src="images/stitch/accueil-2.jpg" alt="Intérieur inspiré Hacienda avec lumière chaude et balcon">
+            <div class="image-badge">
+              <strong>Gombe</strong>
+              <span>Adresse centrale</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section offers" id="experience" aria-labelledby="offers-title">
-        <div class="section-heading">
-          <p class="eyebrow">Expérience Hacienda</p>
-          <h2 id="offers-title">Une adresse, quatre raisons de venir</h2>
+      <section class="section services-band">
+        <div class="section-heading centered">
+          <h2>Explorez nos services</h2>
         </div>
         <div class="offer-grid">
           <article class="feature-card">
-            <i data-lucide="bed-double" aria-hidden="true"></i>
+            <span class="icon-tile"><i data-lucide="bed" aria-hidden="true"></i></span>
             <h3>Chambres & suites</h3>
-            <p>Repos climatisé, Wi-Fi, service en chambre et petit déjeuner pour les courts ou moyens séjours.</p>
-            <a class="text-link" href="chambres.html">Voir les chambres</a>
+            <p>Des espaces conçus pour le repos et le travail, avec les services essentiels pour un séjour à Kinshasa.</p>
+            <a class="text-link" href="chambres.html">En savoir plus</a>
           </article>
           <article class="feature-card">
-            <i data-lucide="chef-hat" aria-hidden="true"></i>
+            <span class="icon-tile"><i data-lucide="chef-hat" aria-hidden="true"></i></span>
             <h3>Côte à Côte</h3>
-            <p>Restaurant apprécié pour une cuisine française, belge, européenne et africaine, du déjeuner au dîner.</p>
-            <a class="text-link" href="restaurant.html">Découvrir la table</a>
+            <p>Une expérience gastronomique qui relie cuisine européenne, influences africaines et accueil local.</p>
+            <a class="text-link" href="restaurant.html">En savoir plus</a>
           </article>
           <article class="feature-card">
-            <i data-lucide="martini" aria-hidden="true"></i>
+            <span class="icon-tile"><i data-lucide="martini" aria-hidden="true"></i></span>
             <h3>Le Mojito lounge</h3>
-            <p>Bar et terrasse pour prolonger une rencontre professionnelle ou une soirée en petit comité.</p>
-            <a class="text-link" href="restaurant.html#lounge">Voir le lounge</a>
+            <p>Un espace pour prolonger un dîner, recevoir en petit comité ou retrouver le calme de la cour.</p>
+            <a class="text-link" href="restaurant.html#lounge">En savoir plus</a>
           </article>
           <article class="feature-card">
-            <i data-lucide="briefcase-business" aria-hidden="true"></i>
+            <span class="icon-tile"><i data-lucide="armchair" aria-hidden="true"></i></span>
             <h3>Réservations privées</h3>
-            <p>Déjeuners d'affaires, tables privées et accueil de visiteurs dans un environnement maîtrisé.</p>
-            <a class="text-link" href="reservations.html">Préparer une demande</a>
+            <p>Réunions de direction, tables privées et demandes sur mesure préparées avec un contact direct.</p>
+            <a class="text-link" href="reservations.html">En savoir plus</a>
           </article>
         </div>
       </section>
 
-      <section class="visual-band" aria-label="Ambiance Hacienda Hôtel">
-        <img src="images/hacienda-courtyard.png" alt="Ambiance illustrée d'une cour intérieure inspirée Hacienda à Kinshasa" loading="lazy">
-        <div class="visual-band-copy">
-          <p class="eyebrow">Signature visuelle</p>
-          <h2>Façade blanche, ferronnerie noire, chaleur terracotta.</h2>
-          <p>Le site s'appuie sur les codes architecturaux de l'établissement pour installer une impression de calme, de standing et de proximité.</p>
-        </div>
-      </section>
-
-      <section class="section rooms" id="chambres" aria-labelledby="rooms-title">
-        <div class="section-heading">
-          <p class="eyebrow">Chambres</p>
-          <h2 id="rooms-title">L'élégance du repos, pensée pour Kinshasa</h2>
-        </div>
-        <div class="content-split">
-          <div class="media-card">
-            <img src="images/hacienda-room.png" alt="Chambre illustrée avec lit king, lumière chaude et balcon noir" loading="lazy">
-          </div>
-          <div class="stacked-panel">
-            <p class="price-note">À partir d'environ <strong>150 USD / nuit</strong></p>
-            <ul class="check-list">
-              <li><i data-lucide="check" aria-hidden="true"></i> Petit déjeuner continental</li>
-              <li><i data-lucide="check" aria-hidden="true"></i> Wi-Fi et climatisation</li>
-              <li><i data-lucide="check" aria-hidden="true"></i> Service en chambre et blanchisserie</li>
-              <li><i data-lucide="check" aria-hidden="true"></i> Parking et accès central à Gombe</li>
-            </ul>
-            <a class="button button-primary" href="reservations.html">
-              <i data-lucide="calendar-check" aria-hidden="true"></i>
-              Demander une disponibilité
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section restaurant" id="restaurant" aria-labelledby="restaurant-title">
-        <div class="content-split reverse">
-          <div class="restaurant-copy">
-            <p class="eyebrow">Restaurant Côte à Côte</p>
-            <h2 id="restaurant-title">Une table installée dans les habitudes de la Gombe</h2>
-            <p>Côte à Côte complète l'expérience hôtel avec une carte qui parle autant aux clients de passage qu'aux habitués de Kinshasa : cuisine française, belge, européenne et africaine, terrasse, bar et possibilité de tables privées.</p>
-            <div class="menu-list">
-              <div>
-                <span>Service</span>
-                <strong>Déjeuner, dîner, boissons</strong>
-              </div>
-              <div>
-                <span>Ambiance</span>
-                <strong>Cour, terrasse, salon lounge</strong>
-              </div>
-              <div>
-                <span>Réservation</span>
-                <strong>Par téléphone ou WhatsApp</strong>
-              </div>
-            </div>
-          </div>
-          <div class="media-card">
-            <img src="images/hacienda-restaurant.png" alt="Table gastronomique illustrée avec accents terracotta et végétation" loading="lazy">
-          </div>
-        </div>
-      </section>
-
-      <section class="section proof" aria-labelledby="proof-title">
-        <div class="section-grid">
+      <section class="section">
+        <div class="stitch-cta">
           <div>
-            <p class="eyebrow">Clarté locale</p>
-            <h2 id="proof-title">Tout ce qu'un client doit savoir avant d'appeler</h2>
+            <h2>Prêt à vivre l'expérience Hacienda ?</h2>
+            <p>Réservez un séjour, une table ou une demande privée avec un parcours clair et direct.</p>
           </div>
-          <div class="proof-grid">
-            <article>
-              <span>01</span>
-              <h3>Qui</h3>
-              <p>Hacienda Hôtel, une adresse d'hébergement et de restauration à Gombe.</p>
-            </article>
-            <article>
-              <span>02</span>
-              <h3>Où</h3>
-              <p>65 Avenue de la Justice, près du coeur administratif et d'affaires de Kinshasa.</p>
-            </article>
-            <article>
-              <span>03</span>
-              <h3>Pourquoi</h3>
-              <p>Un cadre intimiste, une table intégrée et des services utiles aux voyageurs d'affaires.</p>
-            </article>
-            <article>
-              <span>04</span>
-              <h3>Comment</h3>
-              <p>Réservation directe par téléphone, WhatsApp ou email, avec itinéraire en un clic.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section contact" id="contact" aria-labelledby="contact-title">
-        <div class="contact-layout">
           <div>
-            <p class="eyebrow">Réservation directe</p>
-            <h2 id="contact-title">Préparer un séjour ou réserver une table</h2>
-            <p>Ce formulaire prépare un message WhatsApp. Il peut être remplacé par un vrai moteur de réservation dans la version finale du site.</p>
-            <div class="contact-list" aria-label="Coordonnées">
-              <a href="tel:+243820004010"><i data-lucide="phone" aria-hidden="true"></i> +243 820 004 010</a>
-              <a href="tel:+243820004008"><i data-lucide="phone-call" aria-hidden="true"></i> +243 820 004 008</a>
-              <a href="mailto:haciendahotelkinshasa@gmail.com"><i data-lucide="mail" aria-hidden="true"></i> haciendahotelkinshasa@gmail.com</a>
-              <a href="https://www.google.com/maps/search/?api=1&query=65%20Avenue%20de%20la%20Justice%20Gombe%20Kinshasa" target="_blank" rel="noreferrer"><i data-lucide="map-pin" aria-hidden="true"></i> 65 Avenue de la Justice, Gombe</a>
-            </div>
+            <a class="button button-primary" href="reservations.html">Réserver maintenant</a>
+            <span>Réponse directe via téléphone ou WhatsApp</span>
           </div>
-          <form class="booking-form" data-booking-form>
-            <label>
-              Type de demande
-              <select name="requestType">
-                <option>Séjour hôtel</option>
-                <option>Table au restaurant</option>
-                <option>Réservation privée</option>
-              </select>
-            </label>
-            <label>
-              Date souhaitée
-              <input type="date" name="date">
-            </label>
-            <label>
-              Nom
-              <input type="text" name="name" placeholder="Votre nom">
-            </label>
-            <label>
-              Détails
-              <textarea name="details" rows="4" placeholder="Nombre de personnes, durée du séjour ou préférence de table"></textarea>
-            </label>
-            <button class="button button-primary" type="submit">
-              <i data-lucide="send" aria-hidden="true"></i>
-              Envoyer sur WhatsApp
-            </button>
-          </form>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div>
-        <strong>Hacienda Hôtel Kinshasa</strong>
-        <p>Hôtel 24h/24. Restaurant indiqué publiquement autour de 12h-23h. Informations à confirmer avec l'établissement.</p>
+        <strong>Hacienda Hôtel</strong>
+        <p>Un écrin de tranquillité et de raffinement au service de vos séjours professionnels et privés à Kinshasa.</p>
       </div>
-      <p class="proposal-note">Maquette de proposition digitale non officielle, préparée pour discussion commerciale.</p>
+      <div class="footer-links">
+        <a href="contact.html">65 Avenue de la Justice, Gombe</a>
+        <a href="tel:+243820004010">+243 820 004 010</a>
+        <a href="mailto:haciendahotelkinshasa@gmail.com">haciendahotelkinshasa@gmail.com</a>
+      </div>
+      <p class="proposal-note">Maquette de proposition digitale non officielle.</p>
     </footer>
   </body>
 </html>
