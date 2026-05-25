@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chambres Hacienda Hôtel Kinshasa | Séjours d'affaires à Gombe</title>
+    <meta name="description" content="Chambres et séjours d'affaires Hacienda Hôtel Kinshasa : nuitée indicative autour de 150 USD, Wi-Fi, petit déjeuner, climatisation et réservation directe.">
+    <meta name="theme-color" content="#fff8f2">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Hacienda Hôtel, retour à l'accueil">
+        <span class="brand-mark" aria-hidden="true">H</span>
+        <span><strong>Hacienda Hôtel</strong><small>Gombe, Kinshasa</small></span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a class="is-active" href="chambres.html">Chambres</a>
+        <a href="restaurant.html">Restaurant</a>
+        <a href="reservations.html">Réservations</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" type="button" data-theme-toggle aria-label="Changer le thème" aria-pressed="false"><i data-lucide="sun" aria-hidden="true"></i></button>
+        <button class="icon-button menu-button" type="button" data-menu-toggle aria-controls="site-nav" aria-expanded="false" aria-label="Ouvrir le menu"><i data-lucide="menu" aria-hidden="true"></i></button>
+        <a class="header-cta" href="reservations.html"><i data-lucide="calendar-check" aria-hidden="true"></i><span>Réserver</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero page-hero-rooms">
+        <div>
+          <p class="eyebrow">Chambres</p>
+          <h1>Chambres & séjours d'affaires</h1>
+          <p>Un repos calme à Gombe, avec les services essentiels pour travailler, recevoir et circuler à Kinshasa.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="reservations.html"><i data-lucide="calendar-check" aria-hidden="true"></i> Demander une disponibilité</a>
+            <a class="button button-secondary" href="tel:+243820004010"><i data-lucide="phone" aria-hidden="true"></i> Appeler l'hôtel</a>
+          </div>
+        </div>
+        <img src="images/hacienda-room.png" alt="Chambre illustrée Hacienda Hôtel avec lumière chaude et balcon noir">
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Catégories</p>
+          <h2>Trois façons d'organiser le séjour</h2>
+        </div>
+        <div class="room-grid">
+          <article class="room-card">
+            <span>Business</span>
+            <h3>Chambre business</h3>
+            <p>Pour les courts séjours en Gombe, avec Wi-Fi, climatisation et accès rapide aux rendez-vous.</p>
+            <strong>~150 USD / nuit</strong>
+          </article>
+          <article class="room-card">
+            <span>Confort</span>
+            <h3>Chambre supérieure</h3>
+            <p>Plus d'espace pour se poser, recevoir un appel et profiter d'un cadre plus calme après la journée.</p>
+            <strong>Sur demande</strong>
+          </article>
+          <article class="room-card">
+            <span>Long séjour</span>
+            <h3>Séjour longue durée</h3>
+            <p>Une base centrale pour consultants, diplomates et équipes en mission à Kinshasa.</p>
+            <strong>Devis direct</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section service-strip-section">
+        <div class="service-strip">
+          <div><i data-lucide="coffee" aria-hidden="true"></i> Petit déjeuner</div>
+          <div><i data-lucide="wifi" aria-hidden="true"></i> Wi-Fi</div>
+          <div><i data-lucide="wind" aria-hidden="true"></i> Climatisation</div>
+          <div><i data-lucide="parking-circle" aria-hidden="true"></i> Parking</div>
+          <div><i data-lucide="shirt" aria-hidden="true"></i> Blanchisserie</div>
+          <div><i data-lucide="concierge-bell" aria-hidden="true"></i> Service en chambre</div>
+        </div>
+      </section>
+
+      <section class="section contact">
+        <div class="contact-layout">
+          <div>
+            <p class="eyebrow">Demande chambre</p>
+            <h2>Préparer une demande claire</h2>
+            <p>Le formulaire prépare un message WhatsApp avec les informations utiles pour accélérer la réponse.</p>
+          </div>
+          <form class="booking-form" data-booking-form>
+            <label>Type de demande<select name="requestType"><option>Chambre business</option><option>Chambre supérieure</option><option>Séjour longue durée</option></select></label>
+            <label>Date souhaitée<input type="date" name="date"></label>
+            <label>Nom<input type="text" name="name" placeholder="Votre nom"></label>
+            <label>Détails<textarea name="details" rows="4" placeholder="Durée du séjour, nombre de chambres, heure d'arrivée"></textarea></label>
+            <button class="button button-primary" type="submit"><i data-lucide="send" aria-hidden="true"></i> Envoyer sur WhatsApp</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><strong>Hacienda Hôtel Kinshasa</strong><p>Nuitée indicative à confirmer directement avec l'établissement.</p></div>
+      <p class="proposal-note">Maquette de proposition digitale non officielle, préparée pour discussion commerciale.</p>
+    </footer>
+  </body>
+</html>

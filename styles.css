@@ -144,7 +144,8 @@ textarea {
 }
 
 .site-nav a:hover,
-.site-nav a:focus-visible {
+.site-nav a:focus-visible,
+.site-nav a.is-active {
   color: var(--primary);
 }
 
@@ -426,6 +427,13 @@ p {
   margin-bottom: 14px;
 }
 
+.text-link {
+  color: var(--primary);
+  display: inline-flex;
+  font-weight: 900;
+  margin-top: 22px;
+}
+
 .feature-card p,
 .restaurant-copy p,
 .stacked-panel,
@@ -651,6 +659,197 @@ p {
   padding: 34px 28px;
 }
 
+.page-hero {
+  align-items: center;
+  display: grid;
+  gap: 36px;
+  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 0.85fr);
+  margin: 0 auto;
+  max-width: calc(var(--max) + 56px);
+  min-height: 72svh;
+  padding: calc(var(--header-h) + 72px) 28px 72px;
+}
+
+.compact-page-hero {
+  min-height: 58svh;
+}
+
+.page-hero h1 {
+  color: var(--text);
+  margin-bottom: 24px;
+}
+
+.page-hero p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 1.14rem;
+  max-width: 650px;
+}
+
+.page-hero img,
+.map-panel,
+.contact-card-stack {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.page-hero img {
+  aspect-ratio: 4 / 3;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+.room-grid,
+.contact-grid {
+  display: grid;
+  gap: 16px;
+  margin: 0 auto;
+  max-width: var(--max);
+}
+
+.room-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.room-card,
+.contact-grid a,
+.info-box,
+.map-panel,
+.contact-card-stack a {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.room-card {
+  display: grid;
+  gap: 16px;
+  min-height: 260px;
+  padding: 28px;
+}
+
+.room-card span,
+.contact-grid span,
+.map-panel span {
+  color: var(--primary);
+  font-size: 0.82rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.room-card p {
+  color: var(--muted);
+}
+
+.room-card strong {
+  color: var(--secondary);
+  font-family: Epilogue, Inter, sans-serif;
+  margin-top: auto;
+}
+
+.service-strip-section {
+  background: var(--surface-soft);
+  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+}
+
+.service-strip {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  margin: 0 auto;
+  max-width: var(--max);
+}
+
+.service-strip div,
+.contact-card-stack a {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.service-strip div {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  font-weight: 800;
+  min-height: 72px;
+  padding: 14px;
+}
+
+.service-strip svg,
+.contact-grid svg,
+.contact-card-stack svg {
+  color: var(--secondary);
+  height: 19px;
+  width: 19px;
+}
+
+.menu-preview {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px 28px;
+}
+
+.contact-card-stack {
+  background: var(--surface-soft);
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+}
+
+.contact-card-stack a {
+  min-height: 58px;
+  overflow-wrap: anywhere;
+  padding: 14px;
+}
+
+.info-box {
+  color: var(--muted);
+  display: grid;
+  gap: 10px;
+  margin-top: 28px;
+  padding: 18px;
+}
+
+.info-box strong {
+  color: var(--text);
+}
+
+.map-panel {
+  align-content: center;
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--secondary) 14%, transparent), transparent),
+    var(--surface-soft);
+  display: grid;
+  gap: 18px;
+  min-height: 360px;
+  padding: 32px;
+}
+
+.map-panel strong {
+  font-family: Epilogue, Inter, sans-serif;
+  font-size: 2rem;
+}
+
+.contact-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.contact-grid a {
+  display: grid;
+  gap: 14px;
+  min-height: 188px;
+  overflow-wrap: anywhere;
+  padding: 24px;
+}
+
+.contact-grid strong {
+  font-family: Epilogue, Inter, sans-serif;
+  font-size: 1.08rem;
+}
+
 .site-footer strong {
   display: block;
   margin-bottom: 8px;
@@ -726,13 +925,20 @@ p {
   .content-split.reverse,
   .contact-layout,
   .site-footer,
-  .visual-band {
+  .visual-band,
+  .page-hero {
     grid-template-columns: 1fr;
   }
 
   .offer-grid,
-  .proof-grid {
+  .proof-grid,
+  .room-grid,
+  .contact-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .service-strip {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .visual-band {
@@ -843,8 +1049,21 @@ p {
   }
 
   .offer-grid,
-  .proof-grid {
+  .proof-grid,
+  .room-grid,
+  .contact-grid,
+  .service-strip {
     grid-template-columns: 1fr;
+  }
+
+  .page-hero {
+    gap: 24px;
+    min-height: 0;
+    padding: calc(var(--header-h) + 42px) 16px 56px;
+  }
+
+  .page-hero p:not(.eyebrow) {
+    font-size: 1rem;
   }
 
   .feature-card {
